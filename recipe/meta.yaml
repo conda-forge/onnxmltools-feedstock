@@ -1,5 +1,5 @@
 {% set name = "onnxmltools" %}
-{% set version = "1.8.0" %}
+{% set version = "1.9.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/onnx/onnxmltools/archive/{{ version }}.tar.gz
-  sha256: 3f460b79d22a7fb1c9098ccacfe5da9da1558db4e96346bc847fde73c6cad6c0
+  sha256: 172449d8e20f50ef15e60f0896fd9a21a1ec37ba76d7f26e1cac2fce99198daa
 
 build:
   number: 0
