@@ -1,5 +1,5 @@
 {% set name = "onnxmltools" %}
-{% set version = "1.11.0" %}
+{% set version = "1.11.2" %}
 
 
 package:
@@ -8,8 +8,8 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/onnxmltools-{{ version }}.tar.gz
-    sha256: 174b857edcc2e4c56adbc7aed5234fff6a0f51a45956eb4c05c9f842c98bfa1f
-  - url: https://raw.githubusercontent.com/onnx/onnxmltools/{{ version }}/requirements.txt
+    sha256: 4348cc1385cb48c6e527b20ef0da4d80dcbe10f95ddc4ecd66d6b57f9ac159be
+  - url: https://raw.githubusercontent.com/onnx/onnxmltools/v{{ version }}/requirements.txt
     sha256: 2e8729f47e8d7c09fa1b7d5f7de86f24ec05e92b921192bc4ece0086b3979450
     fn: requirements.txt
 
