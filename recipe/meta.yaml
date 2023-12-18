@@ -1,5 +1,5 @@
 {% set name = "onnxmltools" %}
-{% set version = "1.11.2" %}
+{% set version = "1.12.0" %}
 
 
 package:
@@ -8,9 +8,9 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/onnxmltools-{{ version }}.tar.gz
-    sha256: 4348cc1385cb48c6e527b20ef0da4d80dcbe10f95ddc4ecd66d6b57f9ac159be
-  - url: https://raw.githubusercontent.com/onnx/onnxmltools/v{{ version }}/requirements.txt
-    sha256: 2e8729f47e8d7c09fa1b7d5f7de86f24ec05e92b921192bc4ece0086b3979450
+    sha256: ebdc529a78ce79c4be767cd6535544f983fe9dc0ca10f434194086f1c5be64d1
+  - url: https://raw.githubusercontent.com/onnx/onnxmltools/{{ version }}/requirements.txt
+    sha256: f92d283a3e3737a71589af98ef83d528fd8d6f104b11fde77da04c3a8c38d897
     fn: requirements.txt
 
 build:
@@ -26,7 +26,7 @@ requirements:
     - python >=3.6
     - numpy 
     - onnx 
-    - skl2onnx 
+    - skl2onnx
 
 test:
   imports:
