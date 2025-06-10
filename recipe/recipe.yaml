@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: onnxmltools
-  version: 1.12.0
+  version: "1.14.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,13 +10,13 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/onnxmltools-${{ version }}.tar.gz
-    sha256: ebdc529a78ce79c4be767cd6535544f983fe9dc0ca10f434194086f1c5be64d1
+    sha256: d8178f617dab385e96332c3c34be038470b23cb19dd89f40212e867919206544
   - url: https://raw.githubusercontent.com/onnx/onnxmltools/${{ version }}/requirements.txt
     sha256: f92d283a3e3737a71589af98ef83d528fd8d6f104b11fde77da04c3a8c38d897
     file_name: requirements.txt
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
